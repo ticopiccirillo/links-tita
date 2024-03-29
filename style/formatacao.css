@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('styles.css');
+
+:root{
+    --cor1:#166273;
+    --cor2:#102D40;
+    --cor3:#f2e93d;
+    --cor4:#F28241;
+    --cor5:#C8D94A;
+    --cor6:#0D0D0D;
+    --cor7:#ffff;
+}
+
+html{
+    height: 100vh;
+    font-size: 14px;
+}
+
+body{
+   height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(142deg,#102D40,#388ea1);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+i{
+    color: blue;
+}
