@@ -1,12 +1,57 @@
+
+
+@import url('styles.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
+:root{
+    --cor1:#166273;
+    --cor2:#102D40;
+    --cor3:#f2e93d;
+    --cor4:#F28241;
+    --cor5:#C8D94A;
+    --cor6:#0D0D0D;
+    --cor7:#ffff;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+   height: 100vh;
+   background: black;
+   font-family: "Roboto", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(142deg,#102D40,#388ea1);
+    border: 2px solid white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .header{
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
     text-align: center;
     margin-bottom: 40px;
@@ -24,25 +69,29 @@
 }
 
 .header h1{
+    display: block;
+    width: 100%;
     font-size: 2em;
     font-weight: 300;
     margin-bottom: 10px;
     padding: 10px;
     color: var(--cor7);
-    text-shadow: 5px 8px 8px rgba(4, 4, 4, 0.619); 
+    text-shadow: 5px 8px 8px rgba(4, 4, 4, 0.619);
 }
 
 .header p{
+    display: block;
+    width: 100%;
     font-size: 1.2em;
     font-weight: 600;
     padding: 10px;
     color: var(--cor3);
     text-shadow: 5px 8px 8px rgba(4, 4, 4, 0.619);
+   
 }
 
 .btn-contatos{
     display: flex;
-    flex-direction: column;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -51,11 +100,12 @@
 }
 
 .contatos-btn{
-     list-style-type: none;
+    list-style-type: none;
      display: flex;
      flex-direction: column;
      align-items: center;
-     width: 80%;
+     width: 100%;
+     height: auto;
      position: relative;
      gap: 15px;
 }
@@ -75,8 +125,13 @@
 }
 
 .contatos-btn .btn:hover{
-    width: 70vw;
+    width: 300px;
     transform: scale(1.2);
+}
+
+.contatos-btn .btn .icon img{
+    display: block;
+    width: 30px;
 }
 
 .contatos-btn .btn span{
@@ -113,10 +168,53 @@
      background-image: linear-gradient(45deg,var(--cor1), var(--cor2));
      inset: 0;
      opacity: 0;
-     border-radius: 60px;
-     
+     border-radius: 60px; 
 }
 
 .contatos-btn .btn:hover::before{
     opacity: 1;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+footer h2{
+    display: block;
+    margin: 20px auto;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 10px;
+    color: var(--cor3);
+    text-shadow: 5px 8px 8px rgba(4, 4, 4, 0.619);
+}
+
+footer .link-extra{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+footer .link-extra a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    transition: .6s;
+}
+
+footer .link-extra a:hover{
+    transform: scale(1.3);
+}
+
+footer .link-extra img{
+    width: 20px;
+    height: 30px;
 }
