@@ -26,20 +26,19 @@ html{
 }
 
 body{
-   height: 100vh;
-   background: black;
+   height: 99vh;
+   background: linear-gradient(180deg,#388ea1,#102D40);;
    font-family: "Roboto", sans-serif;
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100%;
     max-width: 450px;
-    margin: auto;
+    margin: 1% auto;
     background: linear-gradient(142deg,#102D40,#388ea1);
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.468);
 }
 
 a{
@@ -52,6 +51,7 @@ a{
     flex-direction: column;
     width: 100%;
     align-items: center;
+    justify-content: top;
     text-align: center;
 }
 
@@ -61,7 +61,7 @@ a{
     align-items: center;
     text-align: center;
     max-width: 120px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 50%;
 }
@@ -82,10 +82,10 @@ a{
     width: 100%;
     font-size: 1.2em;
     font-weight: 600;
+    margin-bottom: 30px;
     padding: 10px;
     color: var(--cor3);
     text-shadow: 5px 8px 8px rgba(4, 4, 4, 0.619);
-   
 }
 
 .btn-contatos{
@@ -178,13 +178,13 @@ footer{
     flex-direction: column;
     width: 100%;
     height: auto;
-    margin: 10px auto;
+    margin: auto;
 }
 
 footer h2{
     display: block;
     margin: 20px auto;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 600;
     padding: 10px;
     color: var(--cor3);
@@ -193,6 +193,7 @@ footer h2{
 
 footer .link-extra{
     display: flex;
+    justify-content: space-evenly;
     width: 100%;
     height: auto;
     margin: auto;
@@ -201,10 +202,9 @@ footer .link-extra{
 footer .link-extra a{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 50px;
     height: 50px;
-    margin: auto;
     transition: .6s;
 }
 
@@ -213,6 +213,9 @@ footer .link-extra a:hover{
 }
 
 footer .link-extra img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: 20px;
     height: 30px;
 }
